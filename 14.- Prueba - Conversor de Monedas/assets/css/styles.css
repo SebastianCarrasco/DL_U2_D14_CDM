@@ -1,0 +1,67 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0; /* Elimina los márgenes predeterminados de todos los elementos */
+    padding: 0; /* Elimina el padding predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de los elementos */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente principal de la página */
+    background-color: #f4f4f4; /* Aplica un color de fondo gris claro a la página */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Establece la altura de la página al 100% de la ventana del navegador */
+    margin: 0; /* Elimina cualquier margen alrededor del body */
+}
+
+.container {
+    background: white; /* Establece un fondo blanco para el contenedor */
+    padding: 20px; /* Agrega un padding interno de 20px */
+    border-radius: 8px; /* Aplica bordes redondeados de 8px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra ligera alrededor del contenedor */
+    width: 80%; /* Establece el ancho del contenedor al 80% del área disponible */
+    max-width: 600px; /* Define un ancho máximo de 600px para el contenedor */
+}
+
+header {
+    text-align: center; /* Centra el texto del encabezado */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px */
+}
+
+.conversion-form label, .result h2 {
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px para separar el texto de los elementos siguientes */
+    font-size: 18px; /* Establece el tamaño de fuente a 18px */
+}
+
+.conversion-form input, .conversion-form select {
+    width: 100%; /* El ancho del input y del select se ajusta al 100% del contenedor padre */
+    padding: 10px; /* Agrega un padding interno de 10px */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px para separar los elementos entre sí */
+    border: 1px solid #ddd; /* Aplica un borde de 1px de color gris claro */
+    border-radius: 5px; /* Aplica bordes redondeados de 5px */
+}
+
+.conversion-form button {
+    width: 100%; /* El botón ocupa el 100% del ancho del contenedor padre */
+    padding: 10px; /* Agrega un padding interno de 10px */
+    background-color: #007BFF; /* Aplica un color de fondo azul */
+    color: white; /* Establece el color del texto en blanco */
+    border: none; /* Elimina cualquier borde alrededor del botón */
+    border-radius: 5px; /* Aplica bordes redondeados de 5px */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+}
+
+.conversion-form button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo a un tono más oscuro al pasar el mouse por encima */
+}
+
+.result {
+    margin-top: 20px; /* Agrega un margen superior de 20px para separar la sección de resultados de los elementos anteriores */
+    text-align: center; /* Centra el texto dentro de la sección de resultados */
+}
+
+#chart {
+    margin-top: 20px; /* Agrega un margen superior de 20px para separar el gráfico de los elementos anteriores */
+}
